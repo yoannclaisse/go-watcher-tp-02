@@ -83,4 +83,5 @@ func init() {
 	rootCmd.AddCommand(checkCmd)
 	checkCmd.Flags().StringVarP(&inputFilePath, "input", "i", "", "chemin vers le fichier JSON d'entrées contenant les URLs")
 	checkCmd.MarkFlagRequired("input")
+	checkCmd.Flags().StringVarP(&outputFilePath, "output", "o", "", "chemin vers le fichier JSON de sortie pour les résultats")
 }
